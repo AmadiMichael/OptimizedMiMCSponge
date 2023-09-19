@@ -2,7 +2,7 @@
 
 This is an optimized version of MiMC Sponge Hash Function.
 
-| Version               | Deployment code size | Runtime gas cost |
-| --------------------- | -------------------- | ---------------- |
-| Deployed MiMC Sponge  | 11035                | 17460            |
-| Optimized MiMC Sponge | 10970                | 17379            |
+| Version               | Runtime code size | Runtime gas cost |
+| --------------------- | ----------------- | ---------------- |
+| Deployed MiMC Sponge  | 11035             | 17460            |
+| Optimized MiMC Sponge | 10970             | 17379            |

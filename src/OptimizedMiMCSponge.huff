@@ -1,4 +1,20 @@
 
+
+
+#define macro CONSTRUCTOR() = {
+    __codesize(MAIN)                                                                                                    // [runtimeCodeSize]
+
+    dup1                                                                                                                // [runtimeCodeSize, runtimeCodeSize]
+    0x0a                                                                                                                // [0x0a, runtimeCodeSize, runtimeCodeSize]
+    0x00                                                                                                                // [0x00, 0x0a, runtimeCodeSize, runtimeCodeSize]
+    codecopy                                                                                                            // [runtimeCodeSize]
+
+    0x00                                                                                                                // [0x00, runtimeCodeSize]
+    return                                                                                                      
+}
+
+
+
 // (xl + xr + c[i]) ** 5 for 220 rounds
 #define macro MAIN() = {
     // prime field to mod by
