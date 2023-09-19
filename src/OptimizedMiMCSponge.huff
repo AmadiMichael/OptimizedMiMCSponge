@@ -1,6 +1,6 @@
 
 
-
+// optimized deployer
 #define macro CONSTRUCTOR() = {
     __codesize(MAIN)                                                                                                    // [runtimeCodeSize]
 
@@ -20,12 +20,14 @@
     // prime field to mod by
     0x30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f0000001                                                  // [p]
 
+    
 
     0x00                                                                                                                // [0x00, p]            
     calldataload                                                                                                        // [xl, p]
     dup2                                                                                                                // [p, xl, p]
     0x20                                                                                                                // [0x20, p, xl, p]
     calldataload                                                                                                        // [xr, p, xl, p]
+
 
 
 
